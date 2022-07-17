@@ -1,0 +1,33 @@
+body {
+  background-color: $white-color;
+  font-size: 14px;
+  font-family: $main-font;
+  letter-spacing: 0.03em;
+}
+.container {
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  padding: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.chapter {
+  color: $title-text-color;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
