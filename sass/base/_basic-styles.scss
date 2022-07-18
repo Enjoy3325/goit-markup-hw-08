@@ -3,14 +3,30 @@ body {
   font-size: 14px;
   font-family: $main-font;
   letter-spacing: 0.03em;
+
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 .container {
   width: 1200px;
-  align-items: center;
+  // align-items: center;
   margin: 0 auto;
   padding: 0;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .section {
   padding-top: 94px;

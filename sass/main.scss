@@ -1,12 +1,6 @@
 @import './utils/variables';
 @import './base/normalize';
 @import './base/basic-styles';
-@import './components/header';
-@import './components/hero';
-@import './components/section-advantage';
-@import './components/section-services';
-@import './components/section-employees';
-@import './components/section-clients';
-@import './components/footer';
-@import './components/modal-form';
-@import './components/section-projects';
+@import './components/desktop/';
+@import './components/mobile/index';
+@import './components/tablet/index';

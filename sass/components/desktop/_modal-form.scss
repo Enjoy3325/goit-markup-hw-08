@@ -15,6 +15,7 @@
   z-index: 99;
 
   background: rgba(0, 0, 0, 0.2);
+  overflow-y: scroll;
 
   transition: opacity 250ms $time-distribution, visibility 250ms $time-distribution;
 

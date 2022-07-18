@@ -1,0 +1,232 @@
+.logo {
+  &__descent {
+    // display: block;
+    color: $accent-color;
+    font-family: $secondary-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    text-decoration: none;
+    // margin-right: 93px;
+    margin-bottom: 20px;
+
+    transition: color 250ms $time-distribution;
+  }
+
+  &__text--inverse {
+    transition: color 250ms $time-distribution;
+    color: $white-color;
+  }
+  &__text--inverse:hover,
+  &__text--inverse:focus {
+    color: $accent-color;
+  }
+}
+
+.container-footer {
+  display: flex;
+
+  width: 1200px;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.footer {
+  // display: block;
+
+  // margin: 0 auto;
+  padding: 60px 0;
+
+  background: $fluoric-background-color;
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+
+    width: 231px;
+  }
+  &__contacts {
+    padding: 0;
+    margin: 0;
+  }
+
+  &__input {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+
+    text-align: left;
+    justify-content: left;
+    text-decoration: none;
+  }
+  &__input:not(:last-child) {
+    margin-bottom: 9px;
+  }
+  &__input--location {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71;
+    margin-bottom: 9px;
+
+    text-align: left;
+    justify-content: left;
+    text-decoration: none;
+    color: $white-color;
+  }
+
+  &__maps {
+    color: $white-color;
+    font-style: normal;
+    margin-bottom: 9px;
+  }
+  &__maps:hover,
+  &__maps:focus {
+    color: $accent-color;
+  }
+
+  &__link {
+    color: $footer-contacts-color;
+    text-decoration: none;
+
+    transition: color 250ms $time-distribution;
+  }
+  &__link:hover,
+  &__link:focus {
+    color: $accent-color;
+  }
+  &__content {
+    flex-direction: column;
+    margin-left: auto;
+    display: inline-flex;
+  }
+
+  &__subscription {
+    flex-direction: column;
+    margin-left: auto;
+    display: inline-flex;
+  }
+
+  &__text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding: 0;
+    margin-bottom: 20px;
+
+    color: $white-color;
+  }
+}
+
+/* ---------------------------------------------------------------ПРИСОИДЕНЯЙТЕСЬ ФУТЕР---------------------------------------------*/
+
+.net {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  // margin: 0;
+
+  align-items: center;
+
+  &__item {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 0;
+  }
+  &__item:not(:last-child) {
+    magirn-right: 10px;
+  }
+
+  &__link--color {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    outline: none;
+    fill: $white-color;
+    transition: background-color 250ms $time-distribution, fill 250ms $time-distribution;
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+  &__link--color:hover,
+  &__link--color:focus {
+    background-color: $accent-color;
+    fill: $white-color;
+  }
+}
+
+/* -----------------------------------------------------ПОДПИСАТЬСЯ--------------------------------- */
+.subscription {
+  display: flex;
+
+  &__form {
+    display: flex;
+  }
+  &__label {
+    display: flex;
+  }
+
+  &__input {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.25;
+
+    width: 358px;
+    height: 50px;
+    padding: 15px 15px;
+    cursor: pointer;
+    margin-right: 12px;
+
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+
+    color: $white-color;
+    background-color: transparent;
+    transition: box-shadow 250ms $time-distribution, border-color 250ms $time-distribution;
+  }
+  &__input:focus,
+  &__input:hover {
+    box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-color: $accent-color;
+  }
+  &__button {
+    background: $accent-color;
+    color: $white-color;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    border-radius: 4px;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+    border: 1px;
+
+    padding: 10px 32px;
+
+    min-width: 200px;
+    transition: background 250ms $time-distribution;
+  }
+
+  &__icon {
+    margin-left: 10px;
+  }
+}

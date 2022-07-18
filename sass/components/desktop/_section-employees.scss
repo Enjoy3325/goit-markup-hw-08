@@ -97,29 +97,3 @@
     fill: $white-color;
   }
 }
-.net__link {
-  display: flex;
-  width: 44px;
-  height: 44px;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-
-  border-radius: 50%;
-  background-color: $white-color;
-  fill: $icon-fill;
-  outline: none;
-  transition: background-color 250ms $time-distribution, fill 250ms $time-distribution;
-
-  .net__link:hover,
-  .net__link:focus {
-    background-color: $accent-color;
-    fill: $white-color;
-  }
-
-  // .flip-card {
-  //   width: 100%;
-  // perspective: 1000px;
-
-  border: 1 px solid #f1f1f1;
-}

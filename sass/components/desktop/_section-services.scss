@@ -1,4 +1,9 @@
 .services {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  margin: 0 auto;
+  align-items: center;
+
   &__list {
     display: inline-flex;
     margin: 0;
@@ -29,5 +34,9 @@
   }
   &__item:not(:last-child) {
     margin-right: 30px;
+  }
+
+  @media (max-width: 767px) {
+    display: none;
   }
 }

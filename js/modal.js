@@ -9,14 +9,15 @@
   refs.closeModalBtn.addEventListener('click', toggleModal);
 
   function toggleModal() {
+    document.body.classList.toggle('modal-open');
     refs.modal.classList.toggle('is-hidden');
   }
-  function handleCloseModal(e) { 
-    if(e.key === "Escape") {
+
+  function handleCloseModal(e) {
+    if (e.key === 'Escape') {
       refs.modal.classList.add('is-hidden');
     }
   }
-  
+
   window.addEventListener('keydown', handleCloseModal);
 })();
-
