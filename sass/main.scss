@@ -1,6 +1,4 @@
 @import './utils/variables';
 @import './base/normalize';
 @import './base/basic-styles';
-@import './components/desktop/';
-@import './components/mobile/index';
-@import './components/tablet/index';
+@import './components/desktop/index.scss';

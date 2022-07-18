@@ -28,48 +28,71 @@
           <a href="./index.html" class="logo" lang="en"
             >Web<span class="logo__text">Studio</span>
           </a>
-          <nav class="menu__nav">
-            <ul class="menu__ul">
-              <li class="menu__item">
-                <a href="./index.html" class="menu__link current">Студия</a>
+          <div class="menu__box">
+            <nav class="menu__nav">
+              <!-- <div class="menu__modal"> -->
+              <!-- <button
+                type="button"
+                class="menu__button is-open"
+                aria-expanded="false"
+                aria-controls="menu-container"
+                data-menu-button=""
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобильного меню"
+                  class="menu__open-menu"
+                >
+                  <use class="menu__icon-menu" href="./images/icons.svg/spite.svg#icon-menu"></use>
+                  <use
+                    class="menu__icon-cross"
+                    href="./images/icons.svg/spite.svg#icon-close-menu"
+                  ></use>
+                </svg>
+              </button> -->
+              <ul class="menu__ul">
+                <li class="menu__item">
+                  <a href="./index.html" class="menu__link current">Студия</a>
+                </li>
+                <li class="menu__item">
+                  <a href="./portfolio.html" class="menu__link">Портфолио</a>
+                </li>
+                <li class="menu__item"><a href="#jump" class="menu__link">Контакты</a></li>
+              </ul>
+            </nav>
+            <ul class="contacts">
+              <li class="contacts__item">
+                <a href="mailto:info@devstudio.com" class="contacts__link">
+                  <svg width="16" height="12" class="contacts__icon">
+                    <use href="./images/icons.svg/spite.svg#icon-mail"></use></svg
+                  >info@devstudio.com
+                </a>
               </li>
-              <li class="menu__item">
-                <a href="./portfolio.html" class="menu__link">Портфолио</a>
+              <li class="contacts__item">
+                <a href="tel:+380961111111" class="contacts__link">
+                  <svg width="10" height="16" class="contacts__icon">
+                    <use href="./images/icons.svg/spite.svg#icon-smartphone"></use></svg
+                  >+38 096 111 11 11
+                </a>
               </li>
-              <li class="menu__item"><a href="#jump" class="menu__link">Контакты</a></li>
             </ul>
-          </nav>
-          <ul class="contacts">
-            <li class="contacts__item">
-              <a href="mailto:info@devstudio.com" class="contacts__link">
-                <svg width="16" height="12" class="contacts__icon">
-                  <use href="./images/icons.svg/spite.svg#icon-mail"></use></svg
-                >info@devstudio.com
-              </a>
-            </li>
-            <li class="contacts__item">
-              <a href="tel:+380961111111" class="contacts__link">
-                <svg width="10" height="16" class="contacts__icon">
-                  <use href="./images/icons.svg/spite.svg#icon-smartphone"></use></svg
-                >+38 096 111 11 11
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
       </div>
     </header>
 
     <main>
-      <!--Герой-->
-      <section class="hero">
+    
+    <section class="hero">
         <div class="hero__container">
           <h1 class="hero__heading">Эффективные решения для вашего бизнеса</h1>
           <button data-modal-open class="button" type="button">Заказать услугу</button>
         </div>
-      </section>
+      </section> 
 
-      <!--Особенности-->
-      <section class="section advantage">
+    <!--Особенности-->
+    <!-- <section class="section advantage">
         <div class="container">
           <h2 class="hidden">Особенности</h2>
 
@@ -134,9 +157,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!--Чем мы занимаемся-->
-      <section class="services">
+      </section> -->
+    <!--Чем мы занимаемся-->
+    <!-- <section class="services">
         <div class="container">
           <h2 class="chapter">Чем мы занимаемся</h2>
 
@@ -161,9 +184,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!--Наша команда-->
-      <section class="employees">
+      </section> -->
+    <!--Наша команда-->
+    <!-- <section class="employees">
         <div class="container">
           <h2 class="chapter">Наша команда</h2>
           <ul class="employees__list">
@@ -398,9 +421,9 @@
             </li>
           </ul>
         </div>
-      </section>
-      <!-- НАШИ КЛИЕНТЫ -->
-      <section class="section-client">
+      </section> -->
+    <!-- НАШИ КЛИЕНТЫ -->
+    <!-- <section class="section-client">
         <div class="container">
           <h2 class="chapter">Постоянные клиенты</h2>
           <ul class="client__list">
@@ -449,10 +472,10 @@
             </li>
           </ul>
         </div>
-      </section>
-    </main>
+      </section> -->
+    <!-- </main> -->
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <section class="footer__section">
         <div class="container-footer">
           <div class="footer__nav">
@@ -558,8 +581,8 @@
           </div>
         </div>
       </section>
-    </footer>
-    <div data-modal class="modal is-hidden">
+    </footer> -->
+    <!-- <div data-modal class="modal is-hidden">
       <div class="modal__form">
         <h2 class="modal__header">Оставьте свои данные, мы вам перезвоним</h2>
 
@@ -621,7 +644,8 @@
           </svg>
         </button>
       </div>
-    </div>
+    </div> -->
+    
 
     <script src="./js/modal.js"></script>
   </body>
