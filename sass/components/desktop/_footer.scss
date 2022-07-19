@@ -1,6 +1,5 @@
 .logo {
   &__descent {
-    // display: block;
     color: $accent-color;
     font-family: $secondary-font;
     font-weight: 700;
@@ -8,71 +7,70 @@
     line-height: 1.19;
 
     text-decoration: none;
-    // margin-right: 93px;
-    margin-bottom: 20px;
 
     transition: color 250ms $time-distribution;
-    @media screen and (max-width: 1199px) {
-      font-size: 24px;
-      line-height: 1.16;
-    }
   }
 
   &__text--inverse {
     transition: color 250ms $time-distribution;
     color: $white-color;
   }
-  &__text--inverse:hover,
-  &__text--inverse:focus {
-    color: $accent-color;
-  }
 }
 
 .container-footer {
-  // display: flex;
-
-  width: 1200px;
-  // align-items: baseline;
-  // justify-content: space-between;
-  // margin-left: auto;
-  // margin-right: auto;
   padding: 0;
   padding-right: 15px;
   padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
 
   @media screen and (max-width: 767px) {
-    // display: block;
-    // align-items: center;
     max-width: 480px;
     text-align: center;
   }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    justify-content: space-between;
+    width: 1200px;
+    align-items: baseline;
+  }
 }
+
 .footer {
-  // display: block;
-
-  // margin: 0 auto;
   padding: 60px 0;
-
   background: $fluoric-background-color;
-  @media screen and (max-width: 767px) {
-    // display: block;
-    // text-align: center;
-  }
+
   &__section {
-    // padding-top: 94px;
-    // padding-bottom: 94px;
     margin: 0 auto;
-    // align-items: center;
   }
-  // &__nav-contact {
-  // }
 
-  // &__nav {
-  //   // display: flex;
-  //   // flex-direction: column;
+  &__nav-contact {
+    @media screen and (min-width: 768px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+    }
+  }
 
-  //   // width: 231px;
-  // }
+  &__nav {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-left: 61px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-right: 70px;
+    }
+  }
+
+  &__address {
+    margin-top: 20px;
+  }
+
   &__contacts {
     padding: 0;
     margin: 0;
@@ -84,17 +82,20 @@
     font-weight: 400;
     line-height: 1.71;
 
-    // text-align: left;
-    // justify-content: left;
     text-decoration: none;
 
-    // margin-bottom: 20px;
     margin: 0;
   }
 
   &__input:not(:last-child) {
-    margin-bottom: 9px;
+    @media screen and (max-width: 1199px) {
+      margin-bottom: 8px;
+    }
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
+
   &__input--location {
     font-family: 'Roboto';
     font-style: normal;
@@ -102,19 +103,16 @@
     line-height: 1.71;
     margin-bottom: 9px;
 
-    // text-align: left;
-    // justify-content: left;
     text-decoration: none;
     color: $white-color;
-    @media screen and (max-width: 767px) {
-      text-align: center;
-    }
   }
+
   &__maps {
     color: $white-color;
     font-style: normal;
     margin-bottom: 9px;
   }
+
   &__maps:hover,
   &__maps:focus {
     color: $accent-color;
@@ -123,29 +121,40 @@
   &__link {
     color: $footer-contacts-color;
     text-decoration: none;
+    font-size: 14px;
 
     transition: color 250ms $time-distribution;
   }
+
   &__link:hover,
   &__link:focus {
     color: $accent-color;
   }
+
   &__content {
     flex-direction: column;
-    margin-left: auto;
-    display: inline-flex;
+    display: flex;
 
     @media screen and (max-width: 767px) {
-      // display: block;
-      // text-align: center;
-      margin: 0;
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      padding-right: 74px;
     }
   }
 
   &__subscription {
+    display: flex;
     flex-direction: column;
-    margin-left: auto;
-    display: inline-flex;
+
+    @media screen and (max-width: 1199px) {
+      margin-top: 60px;
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      align-items: center;
+    }
   }
 
   &__text {
@@ -154,9 +163,8 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 0;
-    margin-bottom: 20px;
 
+    margin-bottom: 20px;
     color: $white-color;
   }
 }
@@ -166,9 +174,8 @@
 .net {
   display: flex;
   justify-content: center;
+  margin: 0;
   padding: 0;
-  // margin: 0;
-
   align-items: center;
 
   &__item {
@@ -177,6 +184,7 @@
     align-items: center;
     padding: 0;
   }
+
   &__item:not(:last-child) {
     margin-right: 10px;
   }
@@ -196,6 +204,7 @@
     transition: background-color 250ms $time-distribution, fill 250ms $time-distribution;
     background-color: rgba(255, 255, 255, 0.1);
   }
+
   &__link--color:hover,
   &__link--color:focus {
     background-color: $accent-color;
@@ -205,17 +214,14 @@
 
 /* -----------------------------------------------------ПОДПИСАТЬСЯ--------------------------------- */
 .subscription {
-  // display: flex;
-
-  // &__form {
-  //   // display: flex;
-  // }
   &__label {
-    // display: flex;
-
     @media screen and (max-width: 767px) {
       display: block;
       text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+      display: flex;
     }
   }
 
@@ -224,11 +230,9 @@
     font-size: 16px;
     line-height: 1.25;
 
-    // width: 358px;
     height: 50px;
     padding: 15px 15px;
     cursor: pointer;
-    // margin-right: 12px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -236,9 +240,16 @@
     color: $white-color;
     background-color: transparent;
     transition: box-shadow 250ms $time-distribution, border-color 250ms $time-distribution;
+
     @media screen and (max-width: 767px) {
+      width: 100%;
       max-width: 450px;
     }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+      width: 450px;
+    }
+
     @media screen and (min-width: 1200px) {
       width: 358px;
     }
@@ -249,6 +260,7 @@
     box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-color: $accent-color;
   }
+
   &__button {
     background: $accent-color;
     color: $white-color;
@@ -260,17 +272,25 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
 
     border-radius: 4px;
     cursor: pointer;
     box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
     border: 1px;
 
-    padding: 10px 32px;
-
+    height: 50px;
     min-width: 200px;
     transition: background 250ms $time-distribution;
+
+    @media screen and (max-width: 1199px) {
+      margin-top: 20px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 12px;
+    }
   }
 
   &__icon {
