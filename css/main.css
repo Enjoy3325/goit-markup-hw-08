@@ -1169,34 +1169,24 @@ body.modal-open {
 }
 
 .container-footer {
-  display: flex;
   width: 1200px;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0;
   padding-right: 15px;
   padding-left: 15px;
+}
+@media screen and (max-width: 767px) {
+  .container-footer {
+    max-width: 480px;
+    text-align: center;
+  }
 }
 
 .footer {
   padding: 60px 0;
   background: #2f303a;
 }
-@media screen and (max-width: 767px) {
-  .footer {
-    display: block;
-    text-align: center;
-  }
-}
 .footer__section {
   margin: 0 auto;
-}
-.footer__nav {
-  display: flex;
-  flex-direction: column;
-  width: 231px;
 }
 .footer__contacts {
   padding: 0;
@@ -1207,9 +1197,13 @@ body.modal-open {
   font-style: normal;
   font-weight: 400;
   line-height: 1.71;
-  text-align: left;
-  justify-content: left;
   text-decoration: none;
+}
+@media screen and (max-width: 767px) {
+  .footer__input {
+    max-width: 450px;
+    margin: 0;
+  }
 }
 .footer__input:not(:last-child) {
   margin-bottom: 9px;
@@ -1220,10 +1214,13 @@ body.modal-open {
   font-weight: 400;
   line-height: 1.71;
   margin-bottom: 9px;
-  text-align: left;
-  justify-content: left;
   text-decoration: none;
   color: #ffffff;
+}
+@media screen and (max-width: 767px) {
+  .footer__input--location {
+    text-align: center;
+  }
 }
 .footer__maps {
   color: #ffffff;
@@ -1248,8 +1245,6 @@ body.modal-open {
 }
 @media screen and (max-width: 767px) {
   .footer__content {
-    display: block;
-    text-align: center;
     margin: 0;
   }
 }
@@ -1304,14 +1299,11 @@ body.modal-open {
 }
 
 /* -----------------------------------------------------ПОДПИСАТЬСЯ--------------------------------- */
-.subscription {
-  display: flex;
-}
-.subscription__form {
-  display: flex;
-}
-.subscription__label {
-  display: flex;
+@media screen and (max-width: 767px) {
+  .subscription__label {
+    display: block;
+    text-align: center;
+  }
 }
 .subscription__input {
   font-weight: 400;
@@ -1321,7 +1313,6 @@ body.modal-open {
   height: 50px;
   padding: 15px 15px;
   cursor: pointer;
-  margin-right: 12px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   color: #ffffff;

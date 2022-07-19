@@ -25,16 +25,23 @@
 }
 
 .container-footer {
-  display: flex;
+  // display: flex;
 
   width: 1200px;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
+  // align-items: baseline;
+  // justify-content: space-between;
+  // margin-left: auto;
+  // margin-right: auto;
   padding: 0;
   padding-right: 15px;
   padding-left: 15px;
+
+  @media screen and (max-width: 767px) {
+    // display: block;
+    // align-items: center;
+    max-width: 480px;
+    text-align: center;
+  }
 }
 .footer {
   // display: block;
@@ -44,8 +51,8 @@
 
   background: $fluoric-background-color;
   @media screen and (max-width: 767px) {
-    display: block;
-    text-align: center;
+    // display: block;
+    // text-align: center;
   }
   &__section {
     // padding-top: 94px;
@@ -53,13 +60,15 @@
     margin: 0 auto;
     // align-items: center;
   }
+  // &__nav-contact {
+  // }
 
-  &__nav {
-    display: flex;
-    flex-direction: column;
+  // &__nav {
+  //   // display: flex;
+  //   // flex-direction: column;
 
-    width: 231px;
-  }
+  //   // width: 231px;
+  // }
   &__contacts {
     padding: 0;
     margin: 0;
@@ -71,24 +80,30 @@
     font-weight: 400;
     line-height: 1.71;
 
-    text-align: left;
-    justify-content: left;
+    // text-align: left;
+    // justify-content: left;
     text-decoration: none;
-  }
-  &__input:not(:last-child) {
-    margin-bottom: 9px;
-  }
-  &__input--location {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.71;
-    margin-bottom: 9px;
 
-    text-align: left;
-    justify-content: left;
-    text-decoration: none;
-    color: $white-color;
+    // margin-bottom: 20px;
+    margin: 0;
+  }
+}
+&__input:not(:last-child) {
+  margin-bottom: 9px;
+}
+&__input--location {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.71;
+  margin-bottom: 9px;
+
+  // text-align: left;
+  // justify-content: left;
+  text-decoration: none;
+  color: $white-color;
+  @media screen and (max-width: 767px) {
+    text-align: center;
   }
 
   &__maps {
@@ -117,8 +132,8 @@
     display: inline-flex;
 
     @media screen and (max-width: 767px) {
-      display: block;
-      text-align: center;
+      // display: block;
+      // text-align: center;
       margin: 0;
     }
   }
@@ -186,13 +201,18 @@
 
 /* -----------------------------------------------------ПОДПИСАТЬСЯ--------------------------------- */
 .subscription {
-  display: flex;
+  // display: flex;
 
-  &__form {
-    display: flex;
-  }
+  // &__form {
+  //   // display: flex;
+  // }
   &__label {
-    display: flex;
+    // display: flex;
+
+    @media screen and (max-width: 767px) {
+      display: block;
+      text-align: center;
+    }
   }
 
   &__input {
@@ -200,11 +220,11 @@
     font-size: 16px;
     line-height: 1.25;
 
-    width: 358px;
+    // width: 358px;
     height: 50px;
     padding: 15px 15px;
     cursor: pointer;
-    margin-right: 12px;
+    // margin-right: 12px;
 
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
@@ -212,7 +232,14 @@
     color: $white-color;
     background-color: transparent;
     transition: box-shadow 250ms $time-distribution, border-color 250ms $time-distribution;
+    @media screen and (max-width: 767px) {
+      max-width: 450px;
+    }
+    @media screen and (min-width: 1200px) {
+      width: 358px;
+    }
   }
+
   &__input:focus,
   &__input:hover {
     box-shadow: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
