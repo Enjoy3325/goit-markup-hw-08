@@ -29,12 +29,50 @@
           </a>
           <div class="menu__box">
             <nav class="menu__nav">
+          <div class="menu__modal"> 
+            <button
+                type="button"
+                class="menu__button "
+                aria-expanded="false"
+                aria-controls="burger"
+                data-menu-button=""
+              >
+                <svg
+                  width="40"
+                  height="40"
+                  aria-label="Переключатель мобильного меню"
+                  class="menu__open-menu"
+                >
+                  <use class="menu__icon-menu" href="./images/icons.svg/spite.svg#icon-menu"></use>
+                  <use
+                    class="menu__icon-cross"
+                    href="./images/icons.svg/spite.svg#icon-close-menu"
+                  ></use>
+                </svg>
+              </button>
+              <div class="burger " data-menu id="burger" >
+                <ul class="burger__list">
+                  <li><a href="./index.html" class="burger__item burger__current">Студия</a></li>
+                  <li><a href="./portfolio.html" class="burger__item">Портфолио</a></li>
+                  <li><a href="#" class="burger__item">Контакты</a></li>
+                </ul>
+                <ul class="burger__contacts">
+                  <li><a href="tel:+380961111111" class="burger__item burger__current">+38 096 111 11 11</a></li>
+                  <li><a href="mailto:info@devstudio.com" class="burger__item">info@devstudio.com</a></li>
+                </ul>
+                <ul class="burger__socials">
+                  <li><a href="" class="burger__networks">Instagram</a></li>
+                  <li><a href="" class="burger__networks">Twitter</a></li>
+                  <li><a href="" class="burger__networks">Facebook</a></li>
+                  <li><a href="" class="burger__networks">LinkedIn</a></li>
+                </ul>
+              </div>
               <ul class="menu__ul">
                 <li class="menu__item">
-                  <a href="./index.html" class="menu__link">Студия</a>
+                  <a href="./index.html" class="menu__link current">Студия</a>
                 </li>
                 <li class="menu__item">
-                  <a href="./portfolio.html" class="menu__link current">Портфолио</a>
+                  <a href="./portfolio.html" class="menu__link">Портфолио</a>
                 </li>
                 <li class="menu__item"><a href="#jump" class="menu__link">Контакты</a></li>
               </ul>
@@ -366,5 +404,6 @@
         </div>
       </section>
     </footer>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

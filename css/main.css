@@ -294,7 +294,6 @@ img {
 @media screen and (max-width: 767px) {
   .container {
     max-width: 480px;
-    outline: 2px solid orangered;
   }
   .container .menu__ul {
     display: none;
@@ -306,7 +305,6 @@ img {
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
-    outline: 2px solid orangered;
   }
   .container .menu__button {
     display: none;
@@ -323,10 +321,14 @@ img {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin: 0 auto;
   align-items: center;
+}
+@media screen and (max-width: 1199px) {
+  .section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .chapter {
@@ -337,12 +339,56 @@ img {
   letter-spacing: 0.03em;
   text-align: center;
   margin: 0;
-  margin-bottom: 50px;
 }
 @media screen and (max-width: 767px) {
   .chapter {
     font-size: 28px;
     line-height: 1.17;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .chapter {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .chapter {
+    margin-bottom: 50px;
+  }
+}
+
+.container-header {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+@media screen and (max-width: 767px) {
+  .container-header {
+    max-width: 480px;
+  }
+  .container-header .menu__ul {
+    display: none;
+  }
+  .container-header .contacts {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container-header {
+    width: 768px;
+  }
+  .container-header .menu__button {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-header {
+    width: 1200px;
+  }
+  .container-header .menu__button {
+    display: none;
   }
 }
 
@@ -382,6 +428,30 @@ img {
     flex-grow: 1;
   }
 }
+.menu__button {
+  position: absolute;
+  z-index: 100;
+  top: 0;
+  right: 0;
+  transform: translate(-50%, 50%);
+  display: flex;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+}
+.menu__icon-menu {
+  display: block;
+}
+.menu__button.is-open .menu__icon-menu {
+  display: none;
+}
+.menu__icon-cross {
+  display: none;
+}
+.menu__button.is-open .menu__icon-cross {
+  display: block;
+}
 .menu__ul {
   display: flex;
   padding: 0;
@@ -408,6 +478,75 @@ img {
 }
 .menu__link:hover, .menu__link:focus {
   color: #2196f3;
+}
+
+.burger {
+  display: none;
+  padding: 20px;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08), 0px 1px 3px rgba(0, 0, 0, 0.16);
+  z-index: 3;
+}
+@media screen and (min-width: 767px) {
+  .burger {
+    opacity: 0;
+  }
+}
+.burger__list {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 32px;
+  height: 100%;
+}
+@media screen and (max-width: 767px) {
+  .burger__list {
+    max-width: 480px;
+  }
+}
+.burger__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.burger__socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.burger__networks {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: #2196f3;
+  padding-right: 10px;
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+.burger__item {
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+.burger__current {
+  color: #2196f3;
+}
+
+.burger.is-open {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  height: 100vh;
+  padding: 48px 40px;
+  overflow: hidden;
 }
 
 /* ------------------------------------------------------------------ХЕДЕР----------------------------------------------------------- */
@@ -479,7 +618,6 @@ img {
   margin-right: 10px;
 }
 
-/* -----------------------------------------------------------------ИКОНКИ КОНТАКТОВ ХЕДЕР---------------------------------------------------- */
 .hero {
   margin-left: auto;
   margin-right: auto;
@@ -565,11 +703,17 @@ img {
 }
 
 .advantage {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
   align-items: center;
   /* -----------------------------------------------------------------ОСОБЕННОСТИ------------------------------------------------------- */
+}
+@media screen and (min-width: 1200px) {
+  .advantage {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .advantage__list {
   display: flex;
@@ -599,6 +743,7 @@ img {
   .advantage__item {
     width: calc((100% - 60px) / 2);
     margin: 15px;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -645,6 +790,11 @@ img {
   justify-content: end;
   align-items: center;
 }
+@media screen and (max-width: 1199px) {
+  .advantage__content {
+    margin-bottom: 30px;
+  }
+}
 .advantage__icon {
   display: flex;
   flex-wrap: wrap;
@@ -658,11 +808,17 @@ img {
 }
 
 .employees {
-  padding-top: 94px;
-  padding-bottom: 94px;
   margin: 0 auto;
   align-items: center;
   background-color: #f5f4fa;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .employees {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .employees__info {
   padding-top: 30px;
@@ -763,18 +919,17 @@ img {
   fill: #ffffff;
 }
 
-.employees {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.projects {
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
   align-items: center;
 }
-
-.projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  margin: 0 auto;
-  align-items: center;
+@media screen and (min-width: 1200px) {
+  .projects {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .projects__list {
   display: flex;
@@ -923,10 +1078,16 @@ img {
 }
 
 .section-client {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   margin: 0 auto;
   align-items: center;
+}
+@media screen and (min-width: 1200px) {
+  .section-client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .client {
@@ -1128,7 +1289,12 @@ img {
 .footer__maps {
   color: #ffffff;
   font-style: normal;
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (max-width: 1200px) {
+  .footer__maps {
+    margin-bottom: 9px;
+  }
 }
 .footer__maps:hover, .footer__maps:focus {
   color: #2196f3;
@@ -1305,6 +1471,8 @@ img {
   display: flex;
   width: 100%;
   height: 100%;
+  justify-content: center;
+  align-items: center;
   top: 0;
   left: 0;
   z-index: 99;
@@ -1332,15 +1500,21 @@ img {
 
 .modal__form {
   position: absolute;
-  width: 528px;
-  height: 581px;
-  top: 50%;
-  left: 50%;
   padding: 40px;
   background: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
-  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1199px) {
+  .modal__form {
+    max-width: 450px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .modal__form {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .modal__header {
@@ -1351,6 +1525,11 @@ img {
   text-align: center;
   margin-bottom: 12px;
   color: #212121;
+}
+@media screen and (max-width: 1199px) {
+  .modal__header {
+    line-height: 1.5;
+  }
 }
 
 .signap {
@@ -1372,7 +1551,7 @@ img {
 }
 .signap__input {
   display: block;
-  width: 448px;
+  width: 100%;
   border-radius: 4px;
   padding: 11px;
   padding-left: 42px;
@@ -1422,7 +1601,7 @@ img {
   resize: none;
   justify-content: center;
   padding: 16px 12px;
-  width: 448px;
+  max-width: 100%;
   height: 120px;
   margin-bottom: 20px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1467,20 +1646,33 @@ img {
 .checkbox__input:checked + .checkbox__icon:focus, .checkbox__input:checked + .checkbox__icon:hover {
   background-color: #2196f3;
 }
+.checkbox__button {
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .checkbox__box {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 12px;
   line-height: 1.71;
   color: #757575;
+}
+@media screen and (max-width: 1199px) {
+  .checkbox__box {
+    font-size: 11px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .checkbox__box {
+    font-size: 12px;
+  }
 }
 
 .checkbox-link {
   font-weight: 400;
   font-size: 12px;
-  line-height: 24px;
+  line-height: 2;
   margin-left: 7px;
   letter-spacing: 0.03em;
   color: #2196f3;

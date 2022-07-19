@@ -110,9 +110,11 @@
   &__maps {
     color: $white-color;
     font-style: normal;
-    margin-bottom: 9px;
+    margin-bottom: 8px;
+    @media screen and (max-width: 1200px) {
+      margin-bottom: 9px;
+    }
   }
-
   &__maps:hover,
   &__maps:focus {
     color: $accent-color;
@@ -168,7 +170,6 @@
     color: $white-color;
   }
 }
-
 /* ---------------------------------------------------------------ПРИСОИДЕНЯЙТЕСЬ ФУТЕР---------------------------------------------*/
 
 .net {
