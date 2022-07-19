@@ -1,4 +1,13 @@
-@import './utils/variables';
-@import './base/normalize';
+@import './base/_normalize';
+@import './utils/_variables';
 @import './base/basic-styles';
-@import './components/desktop/index.scss';
+
+@import './components/desktop/header';
+@import './components/desktop/hero';
+@import './components/desktop/section-advantage';
+@import './components/desktop/section-employees';
+@import './components/desktop/section-projects';
+@import './components/desktop/section-clients';
+@import './components/desktop/section-services';
+@import './components/desktop/footer';
+@import './components/desktop/modal-form';
