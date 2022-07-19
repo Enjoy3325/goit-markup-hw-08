@@ -5,6 +5,10 @@
   align-items: center;
   background-color: $fone-comand-color;
 
+  @media screen and (max-width: 767px) {
+    min-width: 480px;
+  }
+
   &__info {
     padding-top: 30px;
     padding-bottom: 30px;
@@ -21,6 +25,10 @@
 
     justify-content: center;
     text-align: center;
+
+    @media screen and (max-width: 767px) {
+      flex-direction: column;
+    }
   }
 
   &__item {
@@ -33,6 +41,11 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+
+    @media screen and (max-width: 767px) {
+      width: 450px;
+      margin-bottom: 30px;
+    }
   }
   &__item:not(:last-child) {
     margin-right: 30px;
@@ -57,43 +70,43 @@
 
     color: $primary-text-color;
   }
-}
 
-.net {
-  display: flex;
-  justify-content: center;
-  padding: 0;
-  margin: 0;
-
-  align-items: center;
-  &__item {
-    display: inline-block;
-
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    padding: 0;
-  }
-  &__item:not(:last-child) {
-    margin-right: 10px;
-  }
-  &__link {
+  .net {
     display: flex;
-    width: 44px;
-    height: 44px;
     justify-content: center;
-    text-align: center;
-    align-items: center;
+    padding: 0;
+    margin: 0;
 
-    border-radius: 50%;
-    background-color: $white-color;
-    fill: $icon-fill;
-    outline: none;
-    transition: background-color 250ms $time-distribution, fill 250ms $time-distribution;
-  }
-  &__link:hover,
-  &__link:focus {
-    background-color: $accent-color;
-    fill: $white-color;
+    align-items: center;
+    &__item {
+      display: inline-block;
+
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      padding: 0;
+    }
+    &__item:not(:last-child) {
+      margin-right: 10px;
+    }
+    &__link {
+      display: flex;
+      width: 44px;
+      height: 44px;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+
+      border-radius: 50%;
+      background-color: $white-color;
+      fill: $icon-fill;
+      outline: none;
+      transition: background-color 250ms $time-distribution, fill 250ms $time-distribution;
+    }
+    &__link:hover,
+    &__link:focus {
+      background-color: $accent-color;
+      fill: $white-color;
+    }
   }
 }
