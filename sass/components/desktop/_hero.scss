@@ -2,6 +2,7 @@
   margin-left: auto;
   margin-right: auto;
   text-align: center;
+  background-color: $fluoric-background-color;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url('../images/photo.jpg');
@@ -12,18 +13,13 @@
   @media screen and (max-width: 767px) {
     max-width: 480px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../../images/2х/hero-mob.jpg, ../../hero-mob@2x.jpg');
+      url('../../../images/2х/hero-mob.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../../images/2х/hero-tablet.jpg, /../hero-tablet@2x.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   @media screen and (max-width: 1199px) {
@@ -36,11 +32,6 @@
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../../images/2х/hero-pc.jpg, ../../hero-pc@2x.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
 
   // width: 1200px;
