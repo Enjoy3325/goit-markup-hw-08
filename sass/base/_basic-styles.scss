@@ -38,6 +38,10 @@ img {
   }
 
   @media screen and (min-width: 1200px) {
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
     width: 1200px;
     .menu__button {
       display: none;

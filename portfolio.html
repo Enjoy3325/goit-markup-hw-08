@@ -100,12 +100,12 @@
     <main>
       <!--Герой-->
       <section class="projects">
-        <div class="container">
-          <h1 class="hidden">Работы</h1>
+                  <div class="container">
+                    <h1 class="hidden">Работы</h1>
           <ul class="projects__list">
-            <li class="projects__input">
-              <button class="projects__button" type="button">Все</button>
-            </li>
+                      <li class="projects__input">
+                        <button class="projects__button" type="button">Все</button>
+                      </li>
             <li class="projects__input">
               <button class="projects__button" type="button">Веб-сайты</button>
             </li>
@@ -123,8 +123,13 @@
             <li class="catalog__input">
               <a href="" class="catalog__link">
                 <div class="catalog__image">
-                  <img srcset="./images/2х/card1.jpg, ./images/2х/card1@2x.jpg"
-                  src="./images/2х/card1.jpg" alt="Веб-сайт" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/card1.jpg 1x, ./images/card1@2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/card1.jpg 1x, ./images/card1@2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/card1.jpg 1x, ./images/card1@2x.jpg 2x" media="(min-width: 480px)">
+                  <img class="services__img" src="./images/card1.jpg"
+                  alt="Веб-сайт" />
+                </picture>
                   <div class="catalog__content">
                     <p class="catalog__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -142,8 +147,13 @@
             <li class="catalog__input">
               <a href="" class="catalog__link">
                 <div class="catalog__image">
-                  <img srcset="./images/2х/card2.jpg, ./images/2х/card2@2x.jpg"
-                  src="./images/2х/card2.jpg" alt="Дизайн" width="370" height="294" />
+                <picture>
+                  <source srcset="./images/card2.jpg 1x, ./images/card2@2x.jpg 2x" media="(min-width: 1200px)">
+                  <source srcset="./images/card2.jpg 1x, ./images/card2@2x.jpg 2x" media="(min-width: 768px)">
+                  <source srcset="./images/card2.jpg 1x, ./images/card2@2x.jpg 2x" media="(min-width: 480px)">
+                  <img class="services__img" src="./images/card2.jpg"
+                  alt="Дизайн" width="370" />
+                </picture>
                   <div class="catalog__content">
                     <p class="catalog__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -162,9 +172,13 @@
             <li class="catalog__input">
               <a href="" class="catalog__link" catalog__name>
                 <div class="catalog__image">
-                  <img srcset="./images/2х/card3.jpg, ./images/2х/card3@2x.jpg"
-                  src="./images/2х/card3.jpg" alt="Приложение" width="370" height="294" />
-
+                  <picture>
+                    <source srcset="./images/card3.jpg 1x, ./images/card3@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/card3-tab.jpg 1x, ./images/card3-t@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/card3-pc.jpg 1x, ./images/images/card3-pc@2x.jpg 2x" media="(min-width: 480px)">
+                    <img class="services__img" src="./images/card3-pc.jpg"
+                    alt="Приложение" width="370"/>
+                  </picture>
                   <div class="catalog__content">
                     <p class="catalog__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -182,8 +196,13 @@
             <li class="catalog__input">
               <a href="" class="catalog__link" catalog__name>
                 <div class="catalog__image">
-                  <img srcset="./images/2х/card4.jpg, ./images/2х/card4@2x.jpg"
-                  src="./images/2х/card4.jpg" alt="Проект-Prime" width="370" height="294" />
+                  <picture>
+                    <source srcset="./images/card4.jpg 1x, ./images/card4@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/card4.jpg 1x, ./images/card4@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/card4.jpg 1x, ./images/card4@2x.jpg 2x" media="(min-width: 480px)">
+                    <img class="services__img" src="./images/card4.jpg"
+                    alt="Проект-Prime" width="370" />
+                  </picture>
 
                   <div class="catalog__content">
                     <p class="catalog__text">
@@ -202,9 +221,13 @@
             <li class="catalog__input">
               <a href="" class="catalog__link" catalog__name>
                 <div class="catalog__image">
-                  <img srcset="./images/2х/card5.jpg, ./images/2х/card5@2x.jpg"
-                  src="./images/2х/card5.jpg" alt="Приложение-2" width="370" height="294" />
-
+                <picture>
+                    <source srcset="./images/card5.jpg 1x, ./images/card5@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/card5.jpg 1x, ./images/card5@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/card5.jpg 1x, ./images/card5@2x.jpg 2x" media="(min-width: 480px)">
+                    <img class="services__img" src="./images/card5.jpg"
+                    alt="Приложение-2" width="370"/>
+                  </picture>
                   <div class="catalog__content">
                     <p class="catalog__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -222,9 +245,13 @@
             <li class="catalog__input">
               <a href="" class="catalog__link" catalog__name>
                 <div class="catalog__image">
-                  <img srcset="./images/2х/card6.jpg, ./images/2х/card6@2x.jpg"
-                  src="./images/2х/card6.jpg" alt="Веб-сайт-2" width="370" height="294" />
-
+                  <picture>
+                    <source srcset="./images/card6.jpg 1x, ./images/card6@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/card6.jpg 1x, ./images/card6@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/card6.jpg 1x, ./images/card6@2x.jpg 2x" media="(min-width: 480px)">
+                    <img class="services__img" src="./images/card6.jpg"
+                    alt="Веб-сайт-2" width="370" height="294" />
+                  </picture>
                   <div class="catalog__content">
                     <p class="catalog__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -242,9 +269,13 @@
             <li class="catalog__input">
               <a href="" class="catalog__link" catalog__name>
                 <div class="catalog__image">
-                  <img srcset="./images/2х/card7.jpg, ./images/2х/card7.jpg"
-                  src="./images/2х/card7.jpg" alt="Дизайн-2" width="370" height="294" />
-
+                  <picture>
+                    <source srcset="./images/card7.jpg 1x, ./images/card7@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/card7.jpg 1x, ./images/card7@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/card7.jpg 1x, ./images/card7@2x.jpg 2x" media="(min-width: 480px)">
+                    <img class="services__img" src="./images/card7.jpg"
+                    alt="Дизайн-7" width="370" height="294" />
+                  </picture>
                   <div class="catalog__content">
                     <p class="catalog__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -262,9 +293,13 @@
             <li class="catalog__input">
               <a href="" class="catalog__link" catalog__name>
                 <div class="catalog__image">
-                  <img srcset="./images/2х/card8.jpg, ./images/2х/card8@2x.jpg"
-                  src="./images/2х/card8.jpg" alt="Маркетинг" width="370" height="294" />
-
+                  <picture>
+                    <source srcset="./images/card8.jpg 1x, ./images/card8@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/card8.jpg 1x, ./images/card8@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/card8.jpg 1x, ./images/card8@2x.jpg 2x" media="(min-width: 480px)">
+                    <img class="services__img" src="./images/card8.jpg"
+                    alt="Маркетинг" width="370" height="294" />
+                  </picture>
                   <div class="catalog__content">
                     <p class="catalog__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и
@@ -282,9 +317,13 @@
             <li class="catalog__input">
               <a href="" class="catalog__link" catalog__name>
                 <div class="catalog__image">
-                  <img srcset="./images/2х/card9.jpg, ./images/2х/card9@2x.jpg"
-                  src="./images/2х/card9.jpg" alt="Приложение-3" width="370" height="294" />
-
+                  <picture>
+                    <source srcset="./images/card9.jpg 1x, ./images/card9@2x.jpg 2x" media="(min-width: 1200px)">
+                    <source srcset="./images/card9.jpg 1x, ./images/card9@2x.jpg 2x" media="(min-width: 768px)">
+                    <source srcset="./images/card9.jpg 1x, ./images/card9@2x.jpg 2x" media="(min-width: 480px)">
+                    <img class="services__img" src="./images/card9.jpg"
+                    alt="Приложение-3" width="370" height="294" />
+                  </picture>
                   <div class="catalog__content">
                     <p class="catalog__text">
                       Ресурс предлагает комплексные предложения с разным уровнем функционала и

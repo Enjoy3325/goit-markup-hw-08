@@ -31,7 +31,7 @@
           <div class="menu__box">
             <nav class="menu__nav">
           <div class="menu__modal"> 
-            <button
+              <button
                 type="button"
                 class="menu__button "
                 aria-expanded="false"
@@ -181,24 +181,37 @@
 
           <ul class="services__list">
             <li class="services__item">
-              <img  srcset="./images/2х/service1.jpg 1x, ./images/2x/service1.jpg 2x" 
-              src =images2х/service1.jpg 
-              alt="десктопные приложения" width="370" />
+
+            <picture>
+              <source srcset="./images/service1.jpg 1x, ./images/service1@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/service1.jpg 1x, ./images/service2.jpg1@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/service1.jpg 1x, ./images/service1@2x.jpg 2x" media="(min-width: 480px)">
+                        
+              <img class="services__img" src="./images/service1.jpg" alt="десктопные приложения" width="370" />
+            </picture>
               <div class="services__content">
                 <h3 class="services__caption">Десктопные приложения</h3>
               </div>
             </li>
             <li class="services__item">
-              <img srcset="./images/2х/service2.jpg 1x, ./images/2х/service2@2x.jpg 2x"  
-              src="./images/2х/service2.jpg"
+            <picture>
+              <source srcset="./images/service2.jpg 1x, ./images/service2@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/service2.jpg 1x, ./images/service2@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/service2.jpg 1x, ./images/service1@2x.jpg 2x" media="(min-width: 480px)">
+              <img class="services__img" src="./images/service2.jpg"
               alt="мобильные приложения" width="370" />
+            </picture>
               <div class="services__content">
                 <h3 class="services__caption">Мобильные приложения</h3>
               </div>
             </li>
             <li class="services__item">
-              <img srcset="./images/2х/service3.jpg 1x, ./images/2х/service3@2x.jpg 2x"  
-              src="./images/2х/service2.jpg" alt="дизайнерские решения" width="370" />
+            <picture>
+              <source srcset="./images/service3.jpg 1x, ./images/service3@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/service3.jpg 1x, ./images/service3@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/service3.jpg 1x, ./images/service3@2x.jpg 2x" media="(min-width: 480px)">
+              <img class="services__img" src="./images/service3.jpg" alt="дизайнерские решения" width="370" />
+            </picture>
               <div class="services__content">
                 <h3 class="services__caption">Дизайнерские решения</h3>
               </div>
@@ -212,9 +225,15 @@
           <h2 class="chapter">Наша команда</h2>
           <ul class="employees__list">
             <li class="employees__item">
-              <img srcset="./images/team-1.jpg, ./images/team-1@2x.jpg" 
-              src="./images/2х/team1.jpg"
+            <picture>
+              <source srcset="./images/team-1.jpg 1x, ./images/team1@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team-1-tab.jpg 1x, ./images/team1@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team-1.jpg 1x, ./images/team1@2x.jpg 2x" media="(min-width: 480px)">
+              <img class="services__img" src="./images/team-1.jpg"
+              
               alt="работник-1" width="450" />
+            </picture>
+            
 
               <div class="employees__info">
                 <h3 class="employees__developer">Игорь Демьяненко</h3>
@@ -272,9 +291,13 @@
               </div>
             </li>
             <li class="employees__item">
-              <img srcset="./images/2х/team2.jpg, ./images/2х/team2@2x.jpg" 
-              src="./images/2х/team2.jpg"
+              <picture>
+              <source srcset="./images/team-2.jpg, ./images/team2@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team2-tab.jpg 1x, ./images/team2@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team-2.jpg 1x, ./images/team2@2x.jpg 2x" media="(min-width: 480px)">
+              <img class="services__img" src="./images/team-2.jpg"
               alt="работник-2" width="450" />
+            </picture>
               <div class="employees__info">
                 <h3 class="employees__developer">Ольга Репина</h3>
                 <p class="employees__position">Frontend Developer</p>
@@ -331,9 +354,13 @@
               </div>
             </li>
             <li class="employees__item">
-              <img srcset="./images/2х/team3.jpg. ./images/2х/team3@2x.jpg" 
-              src="./images/2х/team3.jpg"
+            <picture>
+              <source srcset="./images/team-3.jpg, ./images/team3@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team3-tab.jpg 1x, ./images/team3@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team-3.jpg 1x, ./images/team3@2x.jpg 2x" media="(min-width: 480px)">
+              <img class="services__img" src="./images/team-3.jpg"
               alt="работник-3" width="450" />
+            </picture>
               <div class="employees__info">
                 <h3 class="employees__developer">Николай Тарасов</h3>
                 <p class="employees__position">Marketing</p>
@@ -390,9 +417,13 @@
               </div>
             </li>
             <li class="employees__item">
-              <img srcset="./images/2х/team4.jpg, ./images/2х/team4@2x.jpg" 
-              srcset="./images/2х/team4.jpg"
+              <picture>
+              <source srcset="./images/team-4.jpg, ./images/team4@2x.jpg 2x" media="(min-width: 1200px)">
+              <source srcset="./images/team4-tab.jpg 1x, ./images/team4@2x.jpg 2x" media="(min-width: 768px)">
+              <source srcset="./images/team-4.jpg 1x, ./images/team4@2x.jpg 2x" media="(min-width: 480px)">
+              <img class="services__img" src="./images/team-4.jpg"
               alt="работник-4" width="450" />
+            </picture>
               <div class="employees__info">
                 <h3 class="employees__developer">Михаил Ермаков</h3>
                 <p class="employees__position">UI Designer</p>
