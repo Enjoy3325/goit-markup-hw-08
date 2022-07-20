@@ -313,7 +313,6 @@ img {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    outline: 2px solid orangered;
   }
   .container .menu__button {
     display: none;
@@ -321,6 +320,8 @@ img {
 }
 
 .section {
+  padding-top: 94px;
+  padding-bottom: 94px;
   margin: 0 auto;
   align-items: center;
 }
@@ -472,6 +473,8 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
+  padding-top: 23px;
+  padding-bottom: 23px;
   letter-spacing: 0.02em;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #212121;
@@ -549,6 +552,28 @@ img {
   overflow: hidden;
 }
 
+.current {
+  opacity: 1;
+  color: #2196f3;
+}
+
+.current::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #2196f3;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+@media screen and (min-width: 768px) {
+  .current::after {
+    min-width: 768;
+  }
+}
+
 /* ------------------------------------------------------------------ХЕДЕР----------------------------------------------------------- */
 .hidden {
   position: absolute;
@@ -602,6 +627,12 @@ img {
   list-style: none;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+@media screen and (min-width: 1200px) {
+  .contacts__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
 @media screen and (min-width: 768px) {
   .contacts__link {
     font-size: 12px;
@@ -623,20 +654,24 @@ img {
   margin-right: auto;
   text-align: center;
   background-color: #2f303a;
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/photo.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
   /* ------------------------------------------------------------ВЕРХНЯЯ ЛИНИЯ---------------------------------------------- */
 }
 @media screen and (max-width: 767px) {
   .hero {
     max-width: 480px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/2х/hero-mob.jpg, ../../hero-mob@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .hero {
     max-width: 768px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/2х/hero-tablet.jpg, /../hero-tablet@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -652,6 +687,10 @@ img {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../../../images/2х/hero-pc.jpg, ../../hero-pc@2x.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 .hero__heading {
@@ -1346,7 +1385,6 @@ img {
   color: #ffffff;
 }
 
-/* ---------------------------------------------------------------ПРИСОИДЕНЯЙТЕСЬ ФУТЕР---------------------------------------------*/
 .net {
   display: flex;
   justify-content: center;
@@ -1381,7 +1419,6 @@ img {
   fill: #ffffff;
 }
 
-/* -----------------------------------------------------ПОДПИСАТЬСЯ--------------------------------- */
 @media screen and (max-width: 767px) {
   .subscription__label {
     display: block;
