@@ -12,11 +12,6 @@
 
   @media screen and (max-width: 767px) {
     max-width: 480px;
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url('../../../images/2х/hero-mob.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
   }
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     max-width: 768px;
