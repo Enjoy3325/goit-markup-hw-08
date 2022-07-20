@@ -653,7 +653,10 @@ img {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  background-color: #2f303a;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   /* ------------------------------------------------------------ВЕРХНЯЯ ЛИНИЯ---------------------------------------------- */
 }
 @media screen and (max-width: 767px) {
