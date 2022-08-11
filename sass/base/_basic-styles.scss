@@ -30,11 +30,8 @@ img {
     }
   }
 
-  @media screen and (min-width: 768px) {
-    width: 768px;
-    .menu__button {
-      display: none;
-    }
+  .menu__button {
+    display: none;
   }
 
   @media screen and (min-width: 1200px) {
